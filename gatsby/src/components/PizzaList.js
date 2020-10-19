@@ -20,7 +20,7 @@ const PizzaStyles = styled.div`
   }
   /* if variable --row doesn't exist (browser doesn't support subgrid)
   use subgrid */
-  grid-template-rows: auto auto 1fr;
+  grid-template-rows: var(--rows, subgrid);
   grid-row: span 3;
   grid-gap: 1rem;
   h2,
